@@ -1,0 +1,27 @@
+.site__content{
+    height: 550px;
+    width: 900px;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #fff;
+    & h1{
+        font-weight: 200;
+        font-size: 80px;
+        & span{
+            font-weight: 800;
+        }
+    }
+    & > div{
+padding: 10px 25px;
+}
+}
+.xbox__video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+   
+}

@@ -1,0 +1,112 @@
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+}
+.header__items{ 
+    background-color: #f3f6fb;
+    padding: 10px;
+    & .container{
+    @include flex($justify:space-between,$align:center);
+   .header__news{
+    h4{
+        font-size: 12px;
+        color: #6d758d;
+        font-family: Arial, sans-seri;
+    }
+   }
+   .header__icons{
+    display: flex;
+    gap: 17px;
+    i{
+        font-size: 14px;
+        color: #6d758d;
+        cursor: pointer;
+    }
+
+   }
+   .header__contact{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #6d758d;
+   }
+}
+}
+.header__nav{
+    padding: 30px 0 0 10px;
+    @include flex($justify:space-between,$align:center);
+    .nav__list{
+        @include flex($justify:space-evenly,$align:center);
+        gap: 25px;
+    }
+    .nav__logo{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        .fa-brain{
+            font-size: 50px;
+        }
+
+    }
+    .nav__list__item{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 22px;
+    }
+    .game__box__xb{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 6px 10px;
+        border-radius: 5px;
+        background-color: #9bf00b;
+        color: #f3f6fb;
+        font-size: 13px;
+        &:hover{
+            background-color: #7dc207;
+        }
+    }
+    .game__box__ps{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 6px 10px;
+        border-radius: 5px;
+        background-color: #006fca;
+        color: #f3f6fb;
+        font-size: 13px;
+        &:hover{
+            background-color: #00569c;
+        }
+    }
+    .nav__items{
+        cursor: pointer;
+        display: flex;
+        gap: 20px;
+    }
+
+}
+.nav__list>p{
+    cursor: pointer;
+    position: relative;
+    &:hover {
+        color: #4361bb;
+        &::before{
+        width: 100%;
+    }
+    }
+ 
+&::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #4361bb;
+    transition: 0.3s all ease;
+}
+}
