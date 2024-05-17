@@ -74,7 +74,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 
   &>span {
     text-align: center;
@@ -127,6 +127,7 @@
 .product__wrappers {
   display: flex;
   gap: 10px;
+  overflow: hidden;
 
   &>div {
     flex-basis: calc((100% - 10px * 5) / 6);
@@ -137,16 +138,27 @@
   .product__item {
     background-color: #f3f6fb;
     text-align: center;
+    cursor: pointer;
 
     img {
       width: 100%;
       max-width: 160px;
     }
-    p{
+
+    p {
       font-size: 12px;
       color: #949597;
       margin: 5px 0 0 0;
     }
+
+    .product__scale {
+      transition: all .3s ease-in-out;
+    }
+
+  }
+
+  .product__item:hover .product__scale {
+    transform: translateY(-5px);
   }
 
   .product__item__video {
@@ -155,9 +167,10 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-    align-items: center ;
+    align-items: center;
+    cursor: pointer;
 
-    .video{
+    .video {
       overflow: hidden;
       position: absolute;
       top: 0;
@@ -166,7 +179,8 @@
       height: 100%;
       border-radius: 15px;
     }
-    .video__title{
+
+    .video__title {
       color: #fff;
       padding: 10px 25px;
       border: 1px solid #fff;
@@ -189,4 +203,218 @@
       z-index: -1;
     }
   }
+
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  flex: 1;
+  margin-bottom: 40px;
+}
+
+.product-card-slide {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.prodcuts__left {
+  flex-basis: 30%;
+
+}
+
+.product-card img {
+  max-width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.product-info {
+  padding: 15px 12px;
+  text-align: left;
+}
+
+.product-info-left {
+  padding: 15px 12px;
+  text-align: left;
+}
+
+.left-product-img {
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 1.2em;
+  color: #333;
+  margin: 10px 0;
+}
+
+.products-name-head-sale h4 {
+  font-size: 34px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.products-name-head-sale p {
+  font-size: 16px;
+  font-family: italic;
+  margin-bottom: 20px;
+}
+
+.category {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.name {
+  font-size: 1em;
+  color: #555;
+}
+
+.products__items__slide {
+  display: flex;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  overflow: hidden;
+  text-align: center;
+  width: 200px;
+  padding: 20px;
+  position: relative;
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.product-info {
+  padding: 15px 0;
+}
+
+.name {
+  font-size: 1.1em;
+  color: #333;
+  margin: 10px 0;
+}
+
+.price {
+  font-size: 1.4em;
+  color: #333;
+  margin: 10px 0;
+}
+
+.stock {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.in-stock {
+  color: green;
+}
+
+.products-name-head {
+  text-align: center;
+  font-weight: 100;
+  font-size: 24px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.products-name-head-sale {
+  text-align: center;
+}
+
+.airpods-max {
+  margin-top: 40px;
+  background-color: var(--e-global-color-57cf481);
+  background-image: url(../../img/airpods-max-bg.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner {
+  background: linear-gradient(135deg, #3b3b98, #6a00f4);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+  color: #fff;
+height: 375px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.product-image {
+  position: absolute;
+  max-height: 190%;
+  left: 10px;
+  top: 41%;
+  transform: translateY(-50%);
+}
+
+.banner-content {
+  text-align: end;
+  padding: 20px;
+  z-index: 1;
+}
+
+.logo {
+position: absolute;
+top: -35px;
+background-color: #fff;
+border-radius: 50%;
+}
+
+.logo img {
+  height: 50px;
+  padding: 10px;
+}
+
+.airpods-max-name {
+  margin: 0;
+  max-width: 50%;
+  font-size: 74px;
+  font-weight: 100;
+}
+
+.airpods-max-info {
+  padding: 30px;
+  max-width: 50%;
+}
+
+.airpods-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buy-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.buy-button:hover {
+  background-color: #ddd;
 }

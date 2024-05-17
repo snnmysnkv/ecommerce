@@ -33,6 +33,7 @@
 }
 }
 .header__nav{
+   
     padding: 30px 0 0 10px;
     @include flex($justify:space-between,$align:center);
     .nav__list{
