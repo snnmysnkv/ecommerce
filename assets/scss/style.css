@@ -322,15 +322,10 @@ ol, ul {
 
 .airpods-max {
   margin-top: 40px;
-  background-color: var(--e-global-color-57cf481);
-  background-image: url(../../img/airpods-max-bg.webp);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .banner {
-  background: linear-gradient(135deg, #3b3b98, #6a00f4);
+  background: url(./../../../assets/img/airpods-max-bg.webp);
   border-radius: 20px;
   display: flex;
   align-items: center;
