@@ -414,3 +414,33 @@ border-radius: 50%;
 .buy-button:hover {
   background-color: #ddd;
 }
+.trends{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+gap: 30px;
+  & span i{
+    font-size: 40px;
+
+  }
+  & h3{
+    font-size: 37px;
+    font-weight: 100;
+  }
+  & .trend-list ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 14px;
+  }
+}
+.trend-cards{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+  & .product-card{
+  }
+}
