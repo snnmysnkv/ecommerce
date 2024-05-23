@@ -1,0 +1,97 @@
+.footer-end {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    line-height: 30px;
+    background-color: #f3f6fb;
+    & .customer{
+        line-height: 40px;
+        & p{
+            font-size: 30px;
+            font-weight: 100;
+            margin-bottom: 5px;
+        }
+    }
+    & .customer span{
+        font-size: 12px;
+        & .pay-icons{
+            display: flex;
+            align-items: center;
+            font-size: 35px;
+            gap: 16px;
+        }
+    }
+}
+.fa-cc-visa, .fa-cc-mastercard, .fa-cc-paypal, .fa-cash-register{
+    font-size: 32px;
+}
+
+.footer-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var( --e-global-color-3641bb2 ) ;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    line-height: 15px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 1120px;
+    gap: 30px;
+    margin: 0 auto -75px auto;
+    background-color: #fff;
+    position: relative;
+    & > div{
+        padding-left: 30px;
+        text-align: start;
+
+        & i{
+            font-size: 40px;
+        }
+    }
+}
+.footer-ic-p{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.footer-p{
+    line-height: 25px;
+    max-width: 300px;
+    & p{
+        font-size: 13px;
+        font-weight: 100;
+        font-style: italic;
+    }
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #dfe6f2;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: black;
+    font-weight: 100;
+    & p{
+        line-height: 25px;
+        font-size: 14px;
+        &.span{
+            font-weight: bold;
+
+        }
+    }
+    & .copyright-end ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+}
+.footer-all{
+    position: relative;
+    margin-top: 40px;
+    
+}

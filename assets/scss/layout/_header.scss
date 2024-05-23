@@ -90,8 +90,10 @@
     }
 
 }
-.nav__list>p{
+.nav__list a, .trend-list a, .footer-li ul li, .copyright-end ul li{
     cursor: pointer;
+    color: #000;
+    padding: 3px 0;
     position: relative;
     &:hover {
         color: #4361bb;
