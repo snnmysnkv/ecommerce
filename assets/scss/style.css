@@ -243,11 +243,11 @@ ol, ul {
   font-weight: 200;
   margin-bottom: 20px;
 }
-
 .products-name-head-sale p {
-  font-size: 16px;
-  font-family: italic;
-  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: 100;
+  font-style: italic;
+  opacity: 0.5;
 }
 
 .category {
@@ -328,6 +328,7 @@ ol, ul {
 .banner {
   background: url(./../../../assets/img/airpods-max-bg.webp);
   border-radius: 20px;
+  background-color: #032a4b;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -374,6 +375,8 @@ ol, ul {
 .airpods-max-info {
   padding: 30px;
   max-width: 50%;
+  font-weight: 100;
+  font-style: italic;
 }
 
 .airpods-info {
@@ -385,16 +388,20 @@ ol, ul {
 
 .buy-button {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #fff;
-  color: #000;
+  padding: 10px 40px;
+  color: #fff;
   border-radius: 5px;
   text-decoration: none;
   font-size: 1.1em;
+  background-color: transparent;
+  border: solid #fff;
+  border-radius: 7px;
+  transition: 0.5s;
 }
 
 .buy-button:hover {
-  background-color: #ddd;
+  background-color: #fff;
+  color: #000;
 }
 
 .trends {
@@ -418,6 +425,10 @@ ol, ul {
   justify-content: space-around;
   gap: 14px;
 }
+.trends .trend-list ul li .all-clk {
+  color: #006fca;
+  text-decoration: underline;
+}
 
 .trend-cards {
   display: flex;
@@ -432,20 +443,34 @@ ol, ul {
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 10px;
+  gap: 40px;
+}
+.catalog-game div {
+  line-height: 50px;
+}
+.catalog-game div p {
+  font-size: 15px;
+  font-weight: 100;
+  font-style: italic;
+  opacity: 0.5;
 }
 .catalog-game h3 {
   font-size: 32px;
   font-weight: 100;
 }
 .catalog-game div button {
-  fill: var(--e-global-color-57cf481);
-  color: var(--e-global-color-57cf481);
-  background-color: var(--e-global-color-3641bb2);
-  border-style: solid #006fca;
+  background-color: #fff;
+  color: #006fca;
+  border: solid #006fca;
   border-width: 1px 1px 1px 1px;
   border-radius: 5px 5px 5px 5px;
   padding: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.catalog-game div button:hover {
+  background-color: #006fca;
+  color: #fff;
 }
 
 .last-products {
@@ -506,6 +531,9 @@ ol, ul {
 .slider__display .slider__text p {
   font: 14px Arial;
   line-height: 1.5;
+  font-weight: 100;
+  font-style: italic;
+  opacity: 0.8;
 }
 .slider__display .by__now {
   padding: 15px 35px;
@@ -643,19 +671,19 @@ ol, ul {
   gap: 20px;
 }
 
-.nav__list a, .trend-list a, .footer-li ul li, .copyright-end ul li {
+.nav__list a, .trend-list :not(:first-child) a, .footer-li ul li, .copyright-end ul li {
   cursor: pointer;
   color: #000;
   padding: 3px 0;
   position: relative;
 }
-.nav__list a:hover, .trend-list a:hover, .footer-li ul li:hover, .copyright-end ul li:hover {
+.nav__list a:hover, .trend-list :not(:first-child) a:hover, .footer-li ul li:hover, .copyright-end ul li:hover {
   color: #4361bb;
 }
-.nav__list a:hover::before, .trend-list a:hover::before, .footer-li ul li:hover::before, .copyright-end ul li:hover::before {
+.nav__list a:hover::before, .trend-list :not(:first-child) a:hover::before, .footer-li ul li:hover::before, .copyright-end ul li:hover::before {
   width: 100%;
 }
-.nav__list a::before, .trend-list a::before, .footer-li ul li::before, .copyright-end ul li::before {
+.nav__list a::before, .trend-list :not(:first-child) a::before, .footer-li ul li::before, .copyright-end ul li::before {
   content: "";
   position: absolute;
   top: 100%;
@@ -706,7 +734,7 @@ ol, ul {
   padding-bottom: 30px;
   line-height: 15px;
   border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(193, 193, 193, 0.35) 5px 5px 34px;
   max-width: 1120px;
   gap: 30px;
   margin: 0 auto -75px auto;
@@ -728,13 +756,14 @@ ol, ul {
 }
 
 .footer-p {
-  line-height: 25px;
+  line-height: 20px;
   max-width: 300px;
 }
 .footer-p p {
   font-size: 13px;
   font-weight: 100;
   font-style: italic;
+  opacity: 0.5;
 }
 
 .copyright {
@@ -764,4 +793,25 @@ ol, ul {
 .footer-all {
   position: relative;
   margin-top: 40px;
+}
+
+.delivery-items {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.delivery-content {
+  background: url(./../../img/20622354_laptop_12.jpg);
+  background-color: #DCDDE2;
+  background-position: bottom right;
+  line-height: 20px;
+}
+.delivery-content div h1 {
+  font-size: 94px;
+  font-weight: 100;
+}
+.delivery-content div p {
+  font-size: 80px;
+  font-weight: 100;
+  font-style: italic;
 }/*# sourceMappingURL=style.css.map */

@@ -33,7 +33,7 @@
 }
 }
 .header__nav{
-   
+
     padding: 30px 0 0 10px;
     @include flex($justify:space-between,$align:center);
     .nav__list{
@@ -90,7 +90,7 @@
     }
 
 }
-.nav__list a, .trend-list a, .footer-li ul li, .copyright-end ul li{
+.nav__list a, .trend-list :not(:first-child) a, .footer-li ul li, .copyright-end ul li{
     cursor: pointer;
     color: #000;
     padding: 3px 0;

@@ -1,0 +1,19 @@
+.delivery-items{
+    max-width: 1220px;
+    margin: 0 auto;
+}
+.delivery-content{
+    background: url(./../../img/20622354_laptop_12.jpg);
+    background-color: #DCDDE2;
+    background-position: bottom right;
+    line-height: 20px;
+    & div h1{
+        font-size: 94px;
+        font-weight: 100;
+    }
+   & div p{
+    font-size: 80px;
+    font-weight: 100;
+    font-style: italic;
+   }
+}

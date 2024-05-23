@@ -255,16 +255,19 @@
   margin: 10px 0;
 }
 
-.products-name-head-sale h4 {
-  font-size: 34px;
-  font-weight: 200;
-  margin-bottom: 20px;
-}
+.products-name-head-sale {
+  h4 {
+    font-size: 34px;
+    font-weight: 200;
+    margin-bottom: 20px;
+  }
 
-.products-name-head-sale p {
-  font-size: 16px;
-  font-family: italic;
-  margin-bottom: 20px;
+  p {
+    font-size: 13px;
+    font-weight: 100;
+    font-style: italic;
+    opacity: 0.5;
+  }
 }
 
 .category {
@@ -294,7 +297,7 @@
   padding: 20px;
   position: relative;
   flex-basis: calc((100% - 40px) / 3);
-  
+
 }
 
 .product-card img {
@@ -345,14 +348,15 @@
 }
 
 .banner {
-  background:  url(./../../../assets/img/airpods-max-bg.webp);
+  background: url(./../../../assets/img/airpods-max-bg.webp);
   border-radius: 20px;
+  background-color: #032a4b;
   display: flex;
   align-items: center;
   justify-content: end;
   position: relative;
   color: #fff;
-height: 375px;
+  height: 375px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -372,10 +376,10 @@ height: 375px;
 }
 
 .logo {
-position: absolute;
-top: -35px;
-background-color: #fff;
-border-radius: 50%;
+  position: absolute;
+  top: -35px;
+  background-color: #fff;
+  border-radius: 50%;
 }
 
 .logo img {
@@ -393,6 +397,8 @@ border-radius: 50%;
 .airpods-max-info {
   padding: 30px;
   max-width: 50%;
+  font-weight: 100;
+  font-style: italic;
 }
 
 .airpods-info {
@@ -404,75 +410,108 @@ border-radius: 50%;
 
 .buy-button {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #fff;
-  color: #000;
+  padding: 10px 40px;
+  color: #fff;
   border-radius: 5px;
   text-decoration: none;
   font-size: 1.1em;
+  background-color: transparent;
+  border: solid #fff;
+  border-radius: 7px;
+  transition: 0.5s;
 }
 
 .buy-button:hover {
-  background-color: #ddd;
+  background-color: #fff;
+  color: #000;
 }
-.trends{
+
+.trends {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-gap: 30px;
-  & span i{
+  gap: 30px;
+
+  & span i {
     font-size: 40px;
 
   }
-  & h3{
+
+  & h3 {
     font-size: 37px;
     font-weight: 100;
   }
-  & .trend-list ul{
+
+  & .trend-list ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 14px;
+    & li .all-clk{
+      color: #006fca;
+      text-decoration: underline;
+    }
   }
 }
-.trend-cards{
+
+.trend-cards {
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 35px;
   max-width: 1200px;
   margin: 25px auto;
-  & .product-card{
-  }
+
+  & .product-card {}
 }
-.catalog-game{
+
+.catalog-game {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 10px;
-  & h3{
+  gap: 40px;
+
+  & div {
+    line-height: 50px;
+
+    & p {
+      font-size: 15px;
+      font-weight: 100;
+      font-style: italic;
+      opacity: 0.5;
+    }
+  }
+
+  & h3 {
     font-size: 32px;
     font-weight: 100;
   }
-  & div button{
-    fill: var(--e-global-color-57cf481);
-    color: var(--e-global-color-57cf481);
-    background-color: var(--e-global-color-3641bb2);
-    border-style: solid #006fca;
+
+  & div button {
+    background-color: #fff;
+    color: #006fca;
+    border: solid #006fca;
     border-width: 1px 1px 1px 1px;
     border-radius: 5px 5px 5px 5px;
     padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover{
+      background-color: #006fca;
+      color: #fff;
+    }
   }
 }
-.last-products{
+
+.last-products {
   display: flex;
   align-items: center;
   justify-content: space-around;
   max-width: 850px;
-  margin:  35px auto;
+  margin: 35px auto;
   gap: 55px;
 }
 
@@ -480,57 +519,71 @@ gap: 30px;
 
 /*--------3D SLIDER--------*/
 
-.slider__display{
+.slider__display {
   position: relative;
   display: flex;
   align-items: center;
   color: #fff;
   justify-content: space-between;
   text-align: center;
-  .slider__wrapper{
+
+  .slider__wrapper {
     overflow: hidden;
   }
-  .slider__icon{
+
+  .slider__icon {
     position: absolute;
     left: 50%;
     top: 0;
     transform: translateX(-50%);
     max-width: 150px;
-    img{
+
+    img {
       width: 150px;
     }
   }
-  .video{
+
+  .video {
     overflow: hidden;
     border-radius: 25px;
     position: absolute;
     z-index: -1;
     max-height: 500px;
   }
-  img{
+
+  img {
     width: 100%;
-    
+
   }
-  .person{
+
+  .person {
     flex-basis: 50%;
-    img{
+
+    img {
       scale: .5;
-    animation-name: scale;
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+      animation-name: scale;
+      animation-duration: 4s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
     }
   }
-  .slider__text{
+
+  .slider__text {
     flex-basis: 50%;
-    p{
+
+    p {
       font: 14px Arial;
       line-height: 1.5;
+      font-weight: 100;
+      font-style: italic;
+      opacity: 0.8;
     }
+
     padding: 15px;
   }
-  .by__now{
-    padding:15px 35px;
+
+  .by__now {
+    padding: 15px 35px;
     border: 1px solid #fff;
     border-radius: 15px;
     background-color: transparent;
@@ -538,35 +591,35 @@ gap: 30px;
     margin: 15px 0 0 0;
     cursor: pointer;
     transition: 1s;
-    &:hover{
+
+    &:hover {
       background-color: #fff;
       color: #000;
     }
   }
 
-  h3{
+  h3 {
     font-family: "Roboto", Sans-serif;
     font-size: 80px;
     font-weight: 300;
   }
 
 }
-.last-product-item{
 
-}
+.last-product-item {}
 
 @keyframes scale {
-  0%{
+  0% {
     scale: .4;
     opacity: 0;
   }
 
-70%{
-  rotate: 5deg;
-  opacity: 1;
-}
+  70% {
+    rotate: 5deg;
+    opacity: 1;
+  }
 
-  100%{
+  100% {
     scale: .8;
     opacity: 0;
     rotate: 3deg;

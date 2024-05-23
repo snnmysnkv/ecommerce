@@ -37,7 +37,7 @@
     padding-bottom: 30px;
     line-height: 15px;
     border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgb(193 193 193 / 35%) 5px 5px 34px;
     max-width: 1120px;
     gap: 30px;
     margin: 0 auto -75px auto;
@@ -58,12 +58,13 @@
     gap: 40px;
 }
 .footer-p{
-    line-height: 25px;
+    line-height: 20px;
     max-width: 300px;
     & p{
         font-size: 13px;
         font-weight: 100;
         font-style: italic;
+        opacity: 0.5;
     }
 }
 .copyright{
