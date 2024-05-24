@@ -1,0 +1,273 @@
+.guarante__left-head {
+    // max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.guarante__right-head {
+    background-color: #F9F7E2;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 50px;
+    border-radius: 15px;
+
+    .right__about {
+        display: flex;
+        flex-direction: column;
+        padding: 135px 15px 135px 15px;
+        gap: 15px;
+
+        h2 {
+            font-size: 55px;
+            font-weight: 100;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 100;
+            font-style: italic;
+            opacity: 0.5;
+        }
+    }
+}
+
+.shock-man video {
+    max-width: 730px;
+    border-radius: 15px;
+}
+
+.guarante__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    padding-bottom: 50px;
+
+    .daily-card {
+        background-color: #fff;
+        padding: 20px 35px 20px 35px;
+        border-radius: 16px;
+        position: relative;
+        line-height: 25px;
+        width: 300px;
+
+        i {
+            position: absolute;
+            top: -15px;
+            right: 50%;
+            font-size: 30px;
+            color: #006fca;
+        }
+    }
+
+    .find-card {
+        background-color: #fff;
+        padding: 20px 35px 20px 35px;
+        border-radius: 16px;
+        position: relative;
+        line-height: 25px;
+        width: 300px;
+
+        i {
+            position: absolute;
+            top: -15px;
+            right: 50%;
+            font-size: 30px;
+            color: #006fca;
+        }
+    }
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 30px;
+}
+
+.guarante-ft {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.guarante-ft-about {
+    background-color: #f5f5f5;
+    padding: 30px 30px;
+    border-radius: 20px;
+
+    ul {
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 35px;
+    }
+}
+
+.guarante-t-about {
+    padding: 30px 30px;
+    border-radius: 20px;
+
+    ul {
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 35px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////MEDIA///////////////////////////
+
+
+
+
+// Media Queries
+@media (max-width: 1200px) {
+    .guarante__left-head {
+        flex-direction: column;
+        align-items: center;
+        margin: 25px;
+    }
+    .guarante__right-head{
+        padding: 10px;
+        margin: 35px;
+    }
+    .right__about {
+        padding: 40px 15px;
+    }
+
+    .right__about h2 {
+        font-size: 35px;
+    }
+
+    .right__about p {
+        font-size: 16px;
+    }
+
+    .daily-card,
+    .find-card {
+        max-width: 250px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .right__about {
+        padding: 30px 15px;
+    }
+    .guarante__left-head {
+        flex-direction: column;
+        align-items: center;
+        margin: 25px;
+    }
+    .guarante__right-head{
+        padding: 10px;
+        margin: 35px;
+    }
+
+    .right__about h2 {
+        font-size: 30px;
+    }
+
+    .right__about p {
+        font-size: 14px;
+    }
+    .guarante__cards{
+        flex-direction: column;
+    }
+    .daily-card,
+    .find-card {
+        max-width: 220px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .guarante-ft {
+        flex-direction: column;
+        align-items: center;
+    }
+    .guarante__left-head {
+        flex-direction: column;
+        align-items: center;
+        margin: 25px;
+    }
+    .guarante__right-head{
+        align-items: center;
+        margin: 60px;
+    }
+    .right__about {
+        padding: 20px 5px;
+    }
+
+    .right__about h2 {
+        font-size: 25px;
+    }
+
+    .right__about p {
+        font-size: 14px;
+    }
+
+    .daily-card,
+    .find-card {
+        max-width: 200px;
+        padding: 10px;
+    }
+
+    .shock-man video {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .right__about {
+        padding: 15px 10px;
+    }
+    .guarante__left-head {
+        flex-direction: column;
+        align-items: center;
+        margin: 25px;
+    }
+    .guarante__right-head{
+        padding: 10px;
+        margin: 35px;
+    }
+    .right__about h2 {
+        font-size: 22px;
+    }
+
+    .right__about p {
+        font-size: 12px;
+    }
+
+    .daily-card,
+    .find-card {
+        max-width: 180px;
+        padding: 10px;
+    }
+
+    .shock-man video {
+        max-width: 100%;
+    }
+}
