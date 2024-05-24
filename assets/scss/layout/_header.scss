@@ -225,16 +225,32 @@
         transition: 0.3s all ease;
     }
 }
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    gap: 15px;
+}
+
+.nav__items {
+    display: flex;
+    gap: 10px;
+}
 
 /////////////////////////MEDIA//////////////////////////
 
 
+/////////////////////MEDIA1024///////////////////////////
 
-/* Media Queries for Responsive Design */
-
-/* Media Queries */
-
-/* Medium devices (tablets, 768px and up) */
 @media (max-width: 1024px) {
     .header__nav {
         flex-direction: column;
@@ -258,8 +274,7 @@
         width: 100%;
     }
 }
-
-/* Small devices (phones, less than 768px) */
+///////////////////////////MEDIA768/////////////////////
 @media (max-width: 768px) {
     .header__items .container {
         flex-direction: column;
@@ -308,7 +323,7 @@
     }
 }
 
-/* Extra small devices (phones, less than 576px) */
+////////////////////MEDIA 576///////////////////////////
 @media (max-width: 576px) {
     .header__news h4 {
         font-size: 14px;

@@ -59,14 +59,6 @@
   margin: 0 auto;
 }
 
-
-
-
-// .product__header {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   padding: 30px 0 0 0;
 .mavic {
   background-color: #f3f6fb;
   border-radius: 10px;
@@ -454,7 +446,8 @@
     align-items: center;
     justify-content: space-around;
     gap: 14px;
-    & li .all-clk{
+
+    & li .all-clk {
       color: #006fca;
       text-decoration: underline;
     }
@@ -504,7 +497,8 @@
     padding: 10px;
     transition: 0.5s;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
       background-color: #006fca;
       color: #fff;
     }
@@ -554,7 +548,8 @@
     position: absolute;
     z-index: -1;
     max-height: 500px;
-    video{
+
+    video {
       width: 100%;
     }
   }
@@ -641,8 +636,11 @@
 
 
 
+///////////////////////MEDIA1200////////////////////////
 
-/* General styles for larger screens */
+
+
+
 @media (min-width: 1200px) {
   .grid-container {
     grid-template-columns: 8fr 4fr;
@@ -661,10 +659,16 @@
   }
 }
 
-/* Styles for tablets and small desktops */
+
+
+
+
+
+
+//////////////////////////MEDIA1199//////////////////////////
 @media (max-width: 1199px) and (min-width: 768px) {
- 
-  
+
+
   .grid-container {
     grid-template-columns: 1fr;
   }
@@ -676,24 +680,28 @@
   .product-card {
     width: calc((100% - 20px) / 2);
   }
-.products{
-  display: flex;
-  flex-direction: column;
-}
+  .products {
+    display: flex;
+    flex-direction: column;
+  }
 
   .trend-cards {
     flex-wrap: wrap;
     gap: 20px;
   }
-  .product-image{
+
+  .product-image {
     display: none;
   }
-.airpods-info{
-  max-width: 100%;
-}
-.banner-content{
-  text-align: center;
-}
+
+  .airpods-info {
+    max-width: 100%;
+  }
+
+  .banner-content {
+    text-align: center;
+  }
+
   .last-products {
     gap: 20px;
     flex-wrap: wrap;
@@ -705,13 +713,21 @@
 }
 
 @media (width < 1000px) {
-  .products__items__slide{
-    flex-direction: column  ;
+  .products__items__slide {
+    flex-direction: column;
     align-items: center;
   }
 }
 
-/* Styles for mobile devices */
+
+
+
+
+
+
+
+
+///////////////////MEDIA767/////////////////////////////
 @media (max-width: 767px) {
   .grid-container {
     grid-template-columns: 1fr;
@@ -721,24 +737,29 @@
     text-align: center;
     padding: 20px;
   }
- 
-  .product__item__video{
-   display: flex;
-   flex-direction: column;
+
+  .product__item__video {
+    display: flex;
+    flex-direction: column;
   }
+
   .product-card {
     min-width: 250px;
     margin-bottom: 20px;
   }
-  .product-image{
+
+  .product-image {
     display: none;
   }
-.airpods-info{
-  max-width: 100%;
-}
-.banner-content{
-  text-align: center;
-}
+
+  .airpods-info {
+    max-width: 100%;
+  }
+
+  .banner-content {
+    text-align: center;
+  }
+
   .trend-cards {
     flex-wrap: wrap;
     gap: 20px;
@@ -768,22 +789,45 @@
   }
 }
 
+
+
+
+
+
+
+
+///////////////////////MEDIA768//////////////////////////
 @media (width < 768px) {
-  .slider__display{
+  .slider__display {
     overflow: hidden;
     border-radius: 25px;
     margin: 45px 15px;
     flex-direction: column;
-    .video{
+
+    .video {
       max-height: initial;
     }
-    .video video{
+
+    .video video {
       width: initial;
     }
   }
 }
+.site__content, .mavic{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-/* Additional fine-tuning for very small screens */
+
+
+
+
+
+
+
+
+///////////////////////MEDIA480///////////////////////////////
 @media (max-width: 480px) {
   .product-card {
     width: 100%;
@@ -799,7 +843,8 @@
     flex-direction: column;
     gap: 20px;
   }
-  .product__wrappers{
+
+  .product__wrappers {
     display: flex;
     flex-direction: column;
   }
@@ -808,15 +853,19 @@
     width: 100%;
     margin-bottom: 20px;
   }
-  .product-image{
+
+  .product-image {
     display: none;
   }
-.airpods-info{
-  max-width: 100%;
-}
-.banner-content{
-  text-align: center;
-}
+
+  .airpods-info {
+    max-width: 100%;
+  }
+
+  .banner-content {
+    text-align: center;
+  }
+
   .airpods-max-name {
     font-size: 40px;
   }
