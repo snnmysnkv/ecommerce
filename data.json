@@ -1,0 +1,91 @@
+{
+    "tablets": [
+        {
+            "img": "./assets/img/planshet-apple-ipad-air-2022-wi-fi-64gb-pink-mm9d3-300x300.webp",
+            "price": "700$",
+            "category": "Tablets",
+            "prodName": "Tablet Apple iPad Air 2022 Wi-Fi 64GB Pink (MM9D3)"
+        },
+        {
+            "img": "./assets/img/planshet-apple-ipad-mini-6-2021-64gb-wi-fi-purple-300x300.webp",
+            "price": "500$",
+            "category": "Tablets",
+            "prodName": "Tablet Apple iPad mini 6 2021 64GB Wi-Fi Purple"
+        },
+        {
+            "img": "./assets/img/planshet-apple-ipad-pro-11-2022-cell-128gb-silver-mnyd3-300x300.webp",
+            "price": "999$$",
+            "category": "Tablets",
+            "prodName": "Tablet Apple iPad Pro 11 2022 Cell 128GB Silver (MNYD3)"
+        },
+        {
+            "img": "/assets/img/planshet-apple-ipad-pro-11-2022-cell-256gb-space-grey-mnye3-300x300.webp",
+            "price": "899$",
+            "category": "Tablets",
+            "prodName": "Tablet Apple iPad Pro 11 2022 Cell 256GB Space Gray (MNYE3)"
+        },
+        {
+            "img": "./assets/img/planshet-apple-ipad-pro-11-2022-cell-256gb-space-grey-mnye3-300x300.webp",
+            "price": "600$",
+            "category": "Tablets",
+            "prodName": "Tablet Apple iPad Air 2022 Wi-Fi 64GB Pink (MM9D3)"
+        }
+    ],
+    "smartphone": [
+        {
+            "img": "./assets/img/smartfon-apple-iphone-13-128gb-nanosimesim-blue-300x300.webp",
+            "price": "1200$",
+            "category": "Smartphone",
+            "prodName": "Smartphone Apple iPhone 13 128GB 2 nanoSim Starlight"
+        },
+        {
+            "img": "./assets/img/smartfon-apple-iphone-14-pro-128gb-nanosimesim-deep-purple-300x300.webp",
+            "price": "1399$",
+            "category": "Smartphone",
+            "prodName": "Smartphone Apple iPhone 13 128GB nanoSim/eSim Blue"
+        }
+    ],
+    "gameConsole": [
+        {
+            "img": "./assets/img/konsol-microsoft-xbox-series-s-512gb2-300x300.webp",
+            "price": "1600$",
+            "category": "Game Console",
+            "prodName": "Microsoft Xbox Series S 512Gb console"
+        }
+    ],
+    "notebook" : [
+        {
+            "img": "./assets/img/noutbuk-apple-macbook-air-13-m18256-space-gray-mgn63-300x300.webp",
+            "price": "2100$",
+            "category": "Notebook",
+            "prodName": "Apple MacBook Air 13 M1/8/256 Space Gray (MGN63)"
+        }
+    ],
+    "digitalGames" : [
+        {
+            "img": "./assets/img/gta6-300x300.webp",
+            "price": "80$",
+            "category": "Digital games",
+            "prodName": "GTA 6 (Steam, XBOX, PlayStation 5)"
+        },
+        {
+            "img": "./assets/img/diablo4-300x300.webp",
+            "price": "40$",
+            "category": "Digital games",
+            "prodName": "Diablo IV (PS, XBOX, Computer)"
+        },
+        {
+            "img": "./assets/img/gta6-300x300.webp",
+            "price": "100$",
+            "category": "Digital games",
+            "prodName": "GTA IV (PS, XBOX, Computer)"
+        },
+        {
+            "img": "./assets/img/thelastofus-300x300.webp",
+            "price": "90$",
+            "category": "Digital games",
+            "prodName": "The Last Of Us (PS, XBOX, Computer)"
+        }
+
+    ]
+}

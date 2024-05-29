@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./assets/scss/style.css">
 </head>
-
 <body>
-
     <header>
         <div class="header__items">
             <div class="container">
-
                 <div class="header__news">
                     <h4>BLACK FRIDAY IN MAY! 35% DISCOUNT ON TVS AND FREE DELIVERY FOR ORDERS OVER RUB 15,000
                     </h4>
@@ -41,11 +37,11 @@
                 <a href="./index.html"><i class="fa-solid fa-brain"></i></a>
                 <div class="nav__list">
                     <div class="nav__list__item">
-                        <i class="fa-solid fa-bars"></i>
-                        <h4>Catalog</h4>
+                        <i class="fa-solid fa-bars" id="toogle-menu"></i>
+                        <h4 id="toogle-menu">Catalog</h4>
                     </div>
                     <a href="./delivery.html">Fast Delivery</a>
-                    <a href="#">Low price guarantee</a>
+                    <a href="./guarante.html">Low price guarantee</a>
                     <div class="game__box__xb">
                         <i class="fa-brands fa-xb   ox"></i>
                         <p>XBOX</p>
@@ -60,94 +56,61 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <a href="./login.html"><i class="fa-solid fa-user"></i></a>
                 <i class="fa-regular fa-heart"></i>
-                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-bag-shopping cartBtn"></i>
             </div>
         </div>
     </header>
-    <main>
-        <section>
-            <div class="guarante__left-head">
-                <div class="shock-man">
-                    <video autoplay src="./assets/video/shockman.mp4"
-                        muted loop></video>
-                </div>
-                <div class="guarante__right-head">
-                    <div class="right__about">
-                        <h2>Low price guarantee!</h2>
-                        <p>If you find a product cheaper, we will reduce the price in the store or compensate you when
-                            purchasing directly on the website</p>
-                    </div>
-                    <div class="guarante__cards">
-                        <div class="daily-card">
-                            <i class="fa-brands fa-squarespace"></i>
-                            <p>
-                                We daily monitor the prices of the largest electronics and household goods stores. Let's
-                                compare prices. We offer the best!
-                            </p>
-                        </div>
-                        <div class="find-card">
-                            <i class="fa-solid fa-leaf"></i>
-                            <p>
-                                If you find a product cheaper, we will reduce the price in the store or compensate you
-                                when purchasing directly on the website.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h3>Who do we compare prices with?</h3>
-            <div class="guarante-ft">
-                <div class="guarante-ft-about">
-                    <ul>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                    </ul>
-                </div>
-                <div class="guarante-t-about">
-                    <ul>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                    </ul>
-                </div>
-                <div class="guarante-ft-about">
-                    <ul>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                    </ul>
-                </div>
-                <div class="guarante-t-about">
-                    <ul>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                        <li>lorem.az</li>
-                    </ul>
-                </div>
 
-            </div>
-        </section>
-    </main>
-    <footer>
+
+
+
+
+
+
+    <div class="form-container">
+        <p class="title">Create account</p>
+        <p class="sub-title">Let's get statred with your 30 days free trial</p>
+        <form class="form">
+          <input type="text" class="input" placeholder="Name">
+          <input type="email" class="input" placeholder="Email">
+          <input type="password" class="input" placeholder="Password">
+          <button class="form-btn">Create account</button>
+        </form>
+        <p class="sign-up-label">
+          Already have an account?
+          <a href="./login.html "><span class="sign-up-link">Log in</span></a>
+        </p>
+        <div class="buttons-container">
+          <div class="apple-login-button">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" class="apple-icon" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5-34.9-50-87.7-77.5-157.3-82.8-65.9-5.2-138 38.4-164.4 38.4-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8 23.8 68.2 109.6 235.3 199.1 232.6 46.8-1.1 79.9-33.2 140.8-33.2 59.1 0 89.7 33.2 141.9 33.2 90.3-1.3 167.9-153.2 190.5-221.6-121.1-57.1-114.6-167.2-114.6-170.7zm-105.1-305c50.7-60.2 46.1-115 44.6-134.7-44.8 2.6-96.6 30.5-126.1 64.8-32.5 36.8-51.6 82.3-47.5 133.6 48.4 3.7 92.6-21.2 129-63.7z"></path>
+            </svg>
+            <span>Sign up with Apple</span>
+          </div>
+          <div class="google-login-button">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" x="0px" y="0px" class="google-icon" viewBox="0 0 48 48" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12
+      c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24
+      c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path>
+              <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657
+      C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path>
+              <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36
+      c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path>
+              <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571
+      c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
+            </svg>
+            <span>Sign up with Google</span>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <footer>
         <div class="footer-all">
             <div class="footer-head">
                 <div class="footer-ic-p">
@@ -227,4 +190,22 @@
             </div>
         </div>
     </footer>
+
+
+
+
+    <div class="cart_wrapper">
+        <div class="cart">
+            <div class="cart__top">
+                <h4>Cart (<span class="count">0</span>)</h4>
+                <button class="close__cart">X</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./assets/js/app.js"></script>
 </body>
+</html>
