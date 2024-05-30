@@ -193,6 +193,21 @@
         cursor: pointer;
         display: flex;
         gap: 20px;
+        position: relative;
+
+        .shopCount{
+            position: absolute;
+            top: -12px;
+            right:22px;
+            color: #006fca;
+        }
+        .favCount{
+            position: absolute;
+            top: -12px;
+            right:-10px;
+            color: #006fca;
+        }
+        
     }
 
 }
