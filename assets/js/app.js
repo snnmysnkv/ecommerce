@@ -43,12 +43,11 @@ setTimeout(() =>{
 
 async function getData(){
     allItems = await fetch('https://66585db05c3617052648207a.mockapi.io/items/items').then(res => res.json()).then(res => res[0]);
-    setArrivalsItems()
-    document.querySelector('main').style.display = 'initial';
+    setArrivalsItems();
+    document.querySelector('main').style.opacity = 1;
     document.querySelector('.loader__wrapper').style.display = 'none';
-
-}   
-
+    document.querySelector('html').style.overflow = 'auto';
+};
 
 
 
@@ -146,15 +145,17 @@ function setAddToCartBtnHandler(){
                             elem.quantity = 1;
                             cartItems.push(elem);
                         }
-                        console.log(double);
 
                     }
                 })
-            })
-
+            });
             setCartItems()
+            localStorage.setItem('cartItems', JSON.stringify([...cartItems]))
+            console.log(cartItems);
         }
     })
+
+  
 }
 
 setCartItems();
@@ -193,9 +194,39 @@ function setCartItems(){
     <h4>
         Your shopping cart is empty			<svg aria-hidden="true" role="img" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.4 16.4C16.4 16.4 14.75 14.2 12 14.2C9.25 14.2 7.6 16.4 7.6 16.4M8.7 8.7H8.711M15.3 8.7H15.311M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12Z" stroke="#111111" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></h4>
 </div>
-    `
+    `;
+
+
+
+    let minusBtns = document.querySelectorAll('.item__quantity button:first-child');
+    let plusBtns = document.querySelectorAll('.item__quantity button:last-child');
+    let quantitySpan = document.querySelectorAll('.item__quantity span');
+    minusBtns.forEach((btn, index) => {
+        btn.onclick = () => {
+            if(quantitySpan[index].textContent == 1) return
+            plusMinusCartHandler(--quantitySpan[index].textContent, index);
+        }
+    });
+
+    plusBtns.forEach((btn, index) => {
+        btn.onclick = () => {
+            plusMinusCartHandler(++quantitySpan[index].textContent, index);
+        }
+    });
+
 }
 
 
+function plusMinusCartHandler(quantity, index){
+    cartItems = cartItems.map((item, ind) =>{
+        if(ind == index) item.quantity = quantity;
+        return item;
+    } )
+}
+
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('open');
+}
 
 

@@ -242,5 +242,9 @@ ul {
 
 
   main{
-    display: none;
+    opacity: 0;
+    transition: all .6s ease-in-out;
   }
+html{
+  overflow: hidden;
+}
